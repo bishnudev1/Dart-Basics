@@ -1,5 +1,5 @@
 # Dart-Basics
-Basic Dart For Flutter Development
+Basic Dart For Flutter(App) Development
 
 ## Concept Covered
 - Hello World
@@ -300,6 +300,38 @@ void main(){
   print(BMW.price);
 }
 ```
+## Getters & Setters Method
+- Setter -> Set a paricular value from a variable
+- Getter -> Get the particular value via object
+```bash
+class Shop{
+  late int priceInRs;
+
+  // Setting the phone in RS (Indian Rupee)
+
+  void set price(doller){
+    this.priceInRs = doller * 70;
+  }
+
+  // Getting the phone in half price
+
+  double half(){
+    return priceInRs/2;
+  }
+}
+```
+```bash
+void main(){
+
+  Shop OnePlus = new Shop();
+  OnePlus.price = 549;
+
+  print(OnePlus.priceInRs);
+  
+  print(OnePlus.half());
+}
+```
+
 ## Inheritance
 - Creating A Class
 ```bash
