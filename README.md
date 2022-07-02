@@ -240,3 +240,118 @@ display();
 
 var display = () => print("That's an Arrow Function");
 ```
+## Class & Object
+- Creating a Class with Variables
+```bash
+class Car{
+  String engine = "E1001";
+  
+  void display(){
+    print(engine);
+  }
+}
+```
+- Creating an Object to initialize the Class
+```bash
+void main(){
+  Car c = new Car();
+  c.display();
+  
+  // We can update the engine name by
+  c.engine = "E102F";
+  c.display();
+}
+```
+## Constructor
+```bash
+class Hello{
+  Hello(){
+    print("Hello,World!");
+  }
+}
+```
+- Creating the Object & It will initialize automatically without Calling
+```bash
+Hello cons = new Hello();
+```
+## This Keyword
+- late Keyword
+It will not value nullable and we can assign value later
+```bash
+class Car{
+
+  late String name;
+  late double price;
+
+  CarName(String Name){
+    this.name = Name;
+  }
+  CarPrice(double Price){
+    this.price = Price;
+  }
+}
+```
+```bash
+void main(){
+  Car BMW = new Car();
+  BMW.CarName("BMW M3 GTR");
+  BMW.CarPrice(4000000);
+  print(BMW.name);
+  print(BMW.price);
+}
+```
+## Inheritance
+- Creating A Class
+```bash
+class A{
+  DisplayA(){
+    print("This is Display A");
+  }
+}
+```
+- Creating Class B
+```bash
+class B extends A{
+  DisplayB(){
+    print("This is Display B");
+  }
+}
+```
+- Creaint an Object from Class B and Calling both class Methods
+```bash
+  B b = new B();
+
+  b.DisplayA();
+  b.DisplayB();
+```
+## Super Keyword
+- If Parent and Child Class has a same named fuction then Super Keyword is used to call the function seperately
+```bash
+class Super{
+  display(){
+    print("This is the Super Class");
+  }
+}
+```
+- Inheritaning Class Child form Class Super
+```bash
+class Child extends Super{
+  display(){
+    print("This is the Child Class");
+  }
+
+  message(){
+    // Will invoke or call Child Class Display
+    display();
+    // Will invoke or call Super Class Display
+    super.display();
+  }
+}
+```
+- Creating Class B object and Calling Both Class Function
+```bash
+void main(){
+  Child c = new Child();
+  c.message();
+}
+```
