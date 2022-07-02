@@ -17,13 +17,13 @@ Basic Dart For Flutter Development
 - Inheritance
 - Super Keyword
 
-## 1.Hello World App
+## 1. Hello World App
 ```bash
 void main(){
   print("Hello,World!");
 }
 ```
-## 2.Datatypes
+## 2. Datatypes
 ### Static Datatypes
 - Integer Number
 ```bash
@@ -62,7 +62,7 @@ Here x is changable but not name
 ```bash
 const bool = true;
 ```
-## 3.Type Check
+## 3. Type Check
 ```bash
 const Num = 20;
 print(Num is int); -> Return True
